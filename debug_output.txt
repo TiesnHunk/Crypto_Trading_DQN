@@ -1,0 +1,51 @@
+﻿python : 
+D:\DataDownloaded\Study\MonHoc\Do_An\cafedasach_backup\thisisfinal\cafedasach\predict_market_adaptive.py:64: 
+FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses 
+the default pickle module implicitly. It is possible to construct malicious pickle data which will execute 
+arbitrary code during unpickling (See 
+https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future 
+release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could 
+be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless 
+they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start 
+setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open 
+an issue on GitHub for any issues related to this experimental feature.
+At line:1 char:1
++ python debug_execution.py 2>&1 | Out-File -Encoding utf8 debug_output ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (D:\DataDownload...mental feature.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  checkpoint = torch.load(self.checkpoint_path, map_location='cpu')
+Debugging Bull market (2020-04-06) improved strategy execution
+================================================================================
+Initializing DQN Agent on device: cuda
+   Using Standard DQN architecture
+   Using Standard Experience Replay
+DQN Agent initialized
+   Parameters: 9,603
+
+Market Detection:
+  Price Change: 6.76%
+  Avg Trend: 0.750
+  Avg RSI: 72.80
+  Detected Regime: BULL
+
+============================================================
+APPLYING MARKET-ADAPTIVE RULES (BULL)
+============================================================
+
+Total corrections: 7
+
+Corrections made:
+Traceback (most recent call last):
+  File "D:\DataDownloaded\Study\MonHoc\Do_An\cafedasach_backup\thisisfinal\cafedasach\debug_execution.py", 
+line 22, in <module>
+    pred_df, corrections = predictor.apply_market_adaptive_rules(pred_df, test_df, market_regime)
+  File 
+"D:\DataDownloaded\Study\MonHoc\Do_An\cafedasach_backup\thisisfinal\cafedasach\predict_market_adaptive.py", 
+line 345, in apply_market_adaptive_rules
+    print(f"  Hour {c['hour']:2d}: {c['raw']:4s} \u2192 {c['improved']:4s} | {c['reason']}")
+  File "C:\Users\THANG\AppData\Local\Programs\Python\Python39\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 16: character maps to 
+<undefined>

@@ -1,0 +1,336 @@
+/* Custom Styles for Bitcoin Trading Predictor - Binance Theme */
+
+body {
+    background-color: #0B0E11;
+    color: #EAECEF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    background-color: #1E2329 !important;
+    border-bottom: 1px solid #2B3139;
+    box-shadow: none;
+}
+
+.navbar-brand,
+.navbar-text {
+    color: #EAECEF !important;
+}
+
+.card {
+    background-color: #1E2329;
+    border: 1px solid #2B3139;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: #3E4451;
+}
+
+.card-header {
+    background-color: #1E2329 !important;
+    border-bottom: 1px solid #2B3139;
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+    color: #EAECEF !important;
+}
+
+.card-header h5 {
+    color: #EAECEF !important;
+}
+
+.card-header.bg-primary,
+.card-header.bg-success,
+.card-header.bg-info,
+.card-header.bg-dark {
+    background-color: #1E2329 !important;
+    color: #EAECEF !important;
+}
+
+.card-body {
+    color: #EAECEF;
+}
+
+/* Price Display */
+#currentPrice {
+    font-weight: bold;
+    color: #EAECEF;
+    animation: fadeIn 0.5s;
+}
+
+.price-up {
+    color: #0ECB81 !important;
+}
+
+.price-down {
+    color: #F6465D !important;
+}
+
+/* Badges */
+.badge {
+    padding: 8px 16px;
+    font-size: 1rem;
+}
+
+.badge-buy {
+    background-color: #0ECB81;
+    color: #000;
+}
+
+.badge-sell {
+    background-color: #F6465D;
+    color: #fff;
+}
+
+.badge-hold {
+    background-color: #FCD535;
+    color: #000;
+}
+
+/* Progress Bars */
+.progress {
+    border-radius: 10px;
+    background-color: #2B3139;
+}
+
+.progress-bar {
+    border-radius: 10px;
+    transition: width 0.6s ease;
+}
+
+.bg-success {
+    background-color: #0ECB81 !important;
+}
+
+.bg-danger {
+    background-color: #F6465D !important;
+}
+
+.bg-warning {
+    background-color: #FCD535 !important;
+}
+
+/* RSI Indicator */
+#rsiBar {
+    transition: all 0.6s ease;
+}
+
+.rsi-oversold {
+    background-color: #0ECB81 !important;
+}
+
+.rsi-neutral {
+    background-color: #FCD535 !important;
+}
+
+.rsi-overbought {
+    background-color: #F6465D !important;
+}
+
+/* Recommendation Card */
+#recHeader {
+    background-color: #1E2329 !important;
+    color: #EAECEF !important;
+}
+
+#recHeader h5 {
+    color: #EAECEF !important;
+}
+
+#recAlert {
+    border-radius: 10px;
+    background-color: rgba(43, 49, 57, 0.5);
+    border: 1px solid #2B3139;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 14, 17, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: #EAECEF;
+}
+
+.loading-overlay.hidden {
+    display: none;
+}
+
+.spinner-border {
+    color: #F0B90B !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+/* Chart Container */
+canvas {
+    max-height: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    #currentPrice {
+        font-size: 2.5rem;
+    }
+    
+    canvas {
+        max-height: 250px;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0B0E11;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2B3139;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3E4451;
+}
+
+/* Alert Styling */
+.alert {
+    border-left: 4px solid;
+    color: #EAECEF;
+}
+
+.alert-success {
+    background-color: rgba(14, 203, 129, 0.1);
+    border-left-color: #0ECB81;
+}
+
+.alert-danger {
+    background-color: rgba(246, 70, 93, 0.1);
+    border-left-color: #F6465D;
+}
+
+.alert-warning {
+    background-color: rgba(252, 213, 53, 0.1);
+    border-left-color: #FCD535;
+}
+
+.alert-heading {
+    color: #EAECEF;
+}
+
+/* Icon Colors */
+.text-success {
+    color: #0ECB81 !important;
+}
+
+.text-danger {
+    color: #F6465D !important;
+}
+
+.text-warning {
+    color: #FCD535 !important;
+}
+
+.text-muted {
+    color: #848E9C !important;
+}
+
+/* Last Update Time */
+#lastUpdate {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    color: #848E9C;
+}
+
+/* Risk Badge Colors */
+.risk-low {
+    background-color: #0ECB81 !important;
+    color: #000 !important;
+}
+
+.risk-medium {
+    background-color: #FCD535 !important;
+    color: #000 !important;
+}
+
+.risk-high {
+    background-color: #F6465D !important;
+    color: #fff !important;
+}
+
+/* Form Controls */
+.form-select,
+.form-control {
+    background-color: #2B3139;
+    border: 1px solid #2B3139;
+    color: #EAECEF;
+}
+
+.form-select:focus,
+.form-control:focus {
+    background-color: #2B3139;
+    border-color: #F0B90B;
+    color: #EAECEF;
+}
+
+.form-select option {
+    background-color: #1E2329;
+    color: #EAECEF;
+}
+
+/* Additional text colors for stats */
+.fw-bold {
+    color: #EAECEF;
+}
+
+small {
+    color: #848E9C
+}
+
+.risk-high {
+    background-color: #dc3545 !important;
+}

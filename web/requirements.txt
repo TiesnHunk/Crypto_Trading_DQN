@@ -1,0 +1,15 @@
+# Requirements for Bitcoin Trading Predictor Web Application
+
+# Flask framework
+Flask==3.0.0
+flask-cors==4.0.0
+
+# Data processing
+numpy==1.24.3
+pandas==2.0.3
+
+# API credentials (nếu cần)
+python-binance==1.0.19
+
+# Existing project dependencies
+# (Có thể import từ requirements.txt gốc nếu cần)

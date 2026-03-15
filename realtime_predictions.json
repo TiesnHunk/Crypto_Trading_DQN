@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2025-11-05T08:00:00",
+    "symbol": "BTCUSDT",
+    "price": 101706.1,
+    "action": 0,
+    "action_name": "BUY",
+    "confidence": 0.34233030676841736,
+    "q_values": {
+      "buy": 17.249948501586914,
+      "sell": 17.179800033569336,
+      "hold": 17.238786697387695
+    },
+    "indicators": {
+      "rsi": 52.769493797538544,
+      "macd": 0.0,
+      "adx": 48.9290319231831
+    },
+    "validation_time": "2025-11-05T09:00:00",
+    "validated": true,
+    "actual_price": 101679.75,
+    "price_change_pct": -0.025907983886911224,
+    "correct": false
+  },
+  {
+    "id": 2,
+    "timestamp": "2025-11-10T07:00:00",
+    "symbol": "BTCUSDT",
+    "price": 106397.0,
+    "action": 1,
+    "action_name": "SELL",
+    "confidence": 0.48265036940574646,
+    "q_values": {
+      "buy": 71.77519226074219,
+      "sell": 72.3425521850586,
+      "hold": 71.65910339355469
+    },
+    "indicators": {
+      "rsi": 79.55567361225667,
+      "macd": 0.0,
+      "adx": 78.37129467201656
+    },
+    "validation_time": "2025-11-10T08:00:00",
+    "validated": false,
+    "actual_price": null,
+    "price_change_pct": null,
+    "correct": null
+  }
+]
