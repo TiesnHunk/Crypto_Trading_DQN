@@ -176,7 +176,7 @@ cafedasach/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/minhthang2405/DoAnChuyenNganh.git
+git clone https://github.com/TiesnHunk/Crypto_Trading_DQN.git
 cd DoAnChuyenNganh
 ```
 
