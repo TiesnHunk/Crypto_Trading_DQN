@@ -105,7 +105,7 @@ Dự án xây dựng **hệ thống giao dịch tự động** (automated tradin
 ## Cấu Trúc Dự Án
 
 ```
-cafedasach/
+Crypto_Trading_DQN/
 |
 +-- README.md                        # File nay -- Tong quan du an
 +-- METHODOLOGY.md                   # Chi tiet phuong phap nghien cuu (MDP, thuat toan)
@@ -177,7 +177,7 @@ cafedasach/
 
 ```bash
 git clone https://github.com/TiesnHunk/Crypto_Trading_DQN.git
-cd DoAnChuyenNganh
+cd Crypto_Trading_DQN
 ```
 
 ### 2. Cài Đặt Dependencies
